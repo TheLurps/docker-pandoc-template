@@ -1,0 +1,4 @@
+.vscode/
+README-*.pdf
+citeproc
+pandoc-gls.lua

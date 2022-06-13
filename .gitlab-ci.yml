@@ -1,0 +1,11 @@
+build:
+  image: thelurps/pandoc:v0.2.1
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  script:
+    - make all
+  variables:
+    VERSION: $CI_COMMIT_SHA 
+  artifacts:
+    paths:
+      - "*-$VERSION.pdf"

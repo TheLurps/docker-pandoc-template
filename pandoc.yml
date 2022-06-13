@@ -1,0 +1,13 @@
+---
+from: markdown+yaml_metadata_block+footnotes+tex_math_dollars+implicit_figures+link_attributes
+to: latex
+filters:
+  - pandoc-fignos
+  - /miktex/pandoc-gls.lua
+include-in-header:
+  - fignos-header.tex
+  - glossary-header.tex
+citeproc: true
+include-after-body:
+  - after-body.tex
+...
